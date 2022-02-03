@@ -6,7 +6,7 @@ public main(){
 consile.writeline( " profit is = " + calculate(trees););
 }
 
-public calculate (input){
+public int calculate (input){
 for(int i; i < input.lenght; i++)
 {
     if(input[i]> 3){
@@ -41,7 +41,7 @@ if(allPiceses[i] == 3){
 profit + = 1;
     }
 }
-
+result prift;
 }
 
 private cutter(List<int> inputs){
