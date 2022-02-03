@@ -1,26 +1,20 @@
-using System;
-					
-public class Program
-{
-	var trees = [1,3,2];
-var sum = new Listint();
-var allPiceses = new Listint();
-	public static void Main()
-	{
-		calculate(trees);
-		Console.WriteLine(Hello World);
-	}
+var trees = [1,3,2];
+var sum = new List<int>();
+var allPiceses = new List<int>();
 
+public main(){
+calculate(trees);
+}
 
 public calculate (input){
-for(int i; i  input.lenght; i++)
+for(int i; i < input.lenght; i++)
 {
-    if(input[i] 3){
+    if(input[i]> 3){
  allPiceses.add(cutter(input[i]));
     }
    
     var sum.add(input[i]);
-    if(sum.lenght  2)
+    if(sum.lenght > 2)
     {
         int totalLenght = 0;
 
@@ -35,7 +29,7 @@ allPiceses.add(cutter(sum));
 
 }
 int profit = 0;
-for(int i; i  allPiceses.lenght; i++)
+for(int i; i < allPiceses.lenght; i++)
 {
     if(allPiceses[i] == 1){
 profit + = -1;
@@ -50,13 +44,18 @@ profit + = 1;
 
 }
 
-private cutter(Listint inputs){
-    var result = new Listint();
+private cutter(List<int> inputs){
+    var result = new List<int>();
 
-for(int i; i  inputs.lenght; i++)
+for(int i; i < inputs.lenght; i++)
 {
-    if(inputs[i]  3){
-        var newPiece = 3 - inputs[i-1];
+    if(inputs[i] > 3 and result.lenght  == 0){
+        var newPiece = inputs[i] - 3;
+            result.add(newPiece) ;
+            result.add(3 - newPiece) ;
+    }
+    if(result.lenght > 0){
+            var newPiece = 3 - inputs[i-1];
             result.add(newPiece) ;
             result.add(3 - newPiece) ;
     }
@@ -65,5 +64,4 @@ for(int i; i  inputs.lenght; i++)
     }
 }
 result = result;
-}
 }
