@@ -41,10 +41,10 @@ if(allPiceses[i] == 3){
 profit + = 1;
     }
 }
-result prift;
+return prift;
 }
 
-private cutter(List<int> inputs){
+private List<int> cutter(List<int> inputs){
     var result = new List<int>();
 
 for(int i; i < inputs.lenght; i++)
@@ -63,5 +63,5 @@ for(int i; i < inputs.lenght; i++)
         result.add(inputs[i]);
     }
 }
-result = result;
+return result;
 }
