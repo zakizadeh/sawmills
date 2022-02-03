@@ -3,7 +3,7 @@ var sum = new List<int>();
 var allPiceses = new List<int>();
 
 public main(){
-calculate(trees);
+consile.writeline( " profit is = " + calculate(trees););
 }
 
 public calculate (input){
